@@ -26,7 +26,7 @@ export default function Home() {
             <img src="./lamp.png" alt="lamp" className='w-20 absolute top-[-50px] right-5' />
             <h1 className='text-center text-xs font-bold'><i>Assalamualaikum WarahmatullahiWabarakatuh</i></h1>
             <p className='mt-5 text-xs'>Dengan Hormat,</p>
-            <p className='text-xs mt-1 text-justify'>&nbsp;&nbsp;Puji sykur Kehadirat Allah SWT, mudah-mudahan Bpk/Ibu/Sdr/i kaum muslimin walmuslimat dalam keadaan sehat dan dapat menjalankan aktivi-tas sehari-hari dengan baik. Sehubungan akan dilaksanakan peringatan Maulid Nabi Muhammad SAW 1446 H, kami dari panitia mengundang Bpk/bu/Sdr/i agar berkenan menghadiri acara tersebut yang Inssya Allah akan dilaksanakan pada :</p>
+            <p className='text-xs mt-1 text-justify'>&nbsp;&nbsp;Puji sykur Kehadirat Allah SWT, mudah-mudahan Bpk/Ibu/Sdr/i kaum muslimin walmuslimat dalam keadaan sehat dan dapat menjalankan aktivi-tas sehari-hari dengan baik. Sehubungan akan dilaksanakan peringatan Maulid Nabi Muhammad SAW 1446 H, kami dari panitia mengundang Bpk/bu/Sdr/i agar berkenan menghadiri acara tersebut yang Insya Allah akan dilaksanakan pada :</p>
             <p className='mt-5 text-xs'>Hari: Sabtu</p>
             <p className='text-xs'>Tanggal: 11 Januari 2025</p>
             <div className='flex'>
@@ -35,7 +35,7 @@ export default function Home() {
             </div>
             <p className='text-xs'>Waktu: 19.00 WIB</p>
             <p className='text-xs'>Tempat : Masjid Abu Bakar Ash-Shiddiq Pala Bali RW 6 Boponter Depok</p>
-            <p className='mt-5 text-xs text-justify'>Atas perhatiannya dan kehadirannya kami ucapkan Allhamdulilah Khoiron Katsiron dengan iringan do'a semoga Bpk/bu/Sdr/i kaum muslimin walmuslimat selalu ada dalam lindungan Allah SWT dan Mendapat Syafaat keberkahan Rosululloh SAW Aamiin.</p>
+            <p className='mt-5 text-xs text-justify'>Atas perhatiannya dan kehadirannya kami ucapkan Allhamdulilah Khoiron Katsiron dengan iringan doa semoga Bpk/bu/Sdr/i kaum muslimin walmuslimat selalu ada dalam lindungan Allah SWT dan Mendapat Syafaat keberkahan Rosululloh SAW Aamiin.</p>
             <h1 className='mt-10 text-xs font-bold'><i>Wassalamualaikum Warahmatullahi Wabarakatuh</i></h1>
             <img src="./mosque.png" alt="mosque" className='w-screen absolute bottom-0 left-0 opacity-20' />
             <div className='flex'>
