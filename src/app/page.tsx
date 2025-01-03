@@ -15,18 +15,18 @@ export default function Home() {
       <main className={roboto.className +" items-center sm:items-start"}>
           <div className="sm:container sm:mx-auto relative bg-gradient-to-b from-[#302c6c] to-[#9d2d86] px-5 pb-16 pt-10 overflow-hidden">
             <div className='flex'>
-              <Supense>
+              <Suspense>
               <LottieComponent delay={1000} className='right-0'/>
               <LottieComponent delay={2000}/>
-              </Supense>
+              </Suspense>
             </div>
             <img src="./lamp.png" alt="lamp" className='w-20 absolute top-[-50px] left-5' />
             <Image alt='img-broken' src="/master-almuhibbin.png" className='mx-auto block mb-14' width={110} height={110} />
             <div className='flex'>
-              <Supense>
+              <Suspense>
               <LottieComponent delay={3000}/>
               <LottieComponent delay={4000} className='right-0'/>
-              </Supense>
+              </Suspense>
             </div>
             <img src="./lamp.png" alt="lamp" className='w-20 absolute top-[-50px] right-5' />
             <h1 className='text-center text-xs font-bold'><i>Assalamualaikum WarahmatullahiWabarakatuh</i></h1>
@@ -35,10 +35,10 @@ export default function Home() {
             <p className='mt-5 text-xs'>Hari: Sabtu</p>
             <p className='text-xs'>Tanggal: 11 Januari 2025</p>
             <div className='flex'>
-              <Supense>
+              <Suspense>
               <LottieComponent delay={5000}/>
               <LottieComponent delay={6000} className='right-0'/>
-                </Supense>
+                </Suspense>
             </div>
             <p className='text-xs'>Waktu: 19.00 WIB</p>
             <p className='text-xs'>Tempat : Masjid Abu Bakar Ash-Shiddiq Pala Bali RW 6 Boponter Depok</p>
@@ -46,10 +46,10 @@ export default function Home() {
             <h1 className='mt-10 text-xs font-bold'><i>Wassalamualaikum Warahmatullahi Wabarakatuh</i></h1>
             <img src="./mosque.png" alt="mosque" className='w-screen absolute bottom-0 left-0 opacity-20' />
             <div className='flex'>
-              <Supense>
+              <Suspense>
               <LottieComponent delay={7000}/>
               <LottieComponent delay={8000} className='right-0'/>
-                </Supense>
+                </Suspense>
             </div>
             {/* <div className="w-screen h-screen md:w-[719px] md:h-[984px]">
               <Image alt='img-broken' layout='fill' src="/bg-1.png" objectFit='cover' />
