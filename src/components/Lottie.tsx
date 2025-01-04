@@ -1,8 +1,10 @@
 'use client'
 
-import Lottie from 'react-lottie';
+import dynamic from 'next/dynamic';
 import * as animationData from './stars.json'
 import { useEffect, useState } from 'react';
+
+const Lottie = dynamic(() => import('react-lottie'), { ssr: false });
 
 type LottieCompnentProps = {
   className?: string
@@ -26,6 +28,7 @@ const LottieComponent = ({className, delay}: LottieCompnentProps) => {
       setPlay(true)
     }, delay)
   }, [delay])
+
   return (
     <div className={'absolute ' + className}>
       <Lottie 
