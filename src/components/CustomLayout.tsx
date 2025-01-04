@@ -1,9 +1,9 @@
-/* eslint-disable @next/next/no-img-element */
 'use client'
 
+/* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
 import { Montserrat } from 'next/font/google'
-// import LottieComponent from './Lottie';
+import LottieComponent from './Lottie';
 
 const roboto = Montserrat({
   weight: '400',
@@ -15,14 +15,14 @@ const CustomLayout = () => {
     <main className={roboto.className +" items-center sm:items-start"}>
           <div className="sm:container sm:mx-auto relative bg-gradient-to-b from-[#302c6c] to-[#9d2d86] px-5 pb-16 pt-10 overflow-hidden">
             <div className='flex'>
-              {/* <LottieComponent delay={1000} className='right-0'/> */}
-              {/* <LottieComponent delay={2000}/> */}
+              <LottieComponent delay={1000} className='right-0'/>
+              <LottieComponent delay={2000}/>
             </div>
             <img src="./lamp.png" alt="lamp" className='w-20 absolute top-[-50px] left-5' />
             <Image alt='img-broken' src="/master-almuhibbin.png" className='mx-auto block mb-14' width={110} height={110} />
             <div className='flex'>
-              {/* <LottieComponent delay={3000}/> */}
-              {/* <LottieComponent delay={4000} className='right-0'/> */}
+              <LottieComponent delay={3000}/>
+              <LottieComponent delay={4000} className='right-0'/>
             </div>
             <img src="./lamp.png" alt="lamp" className='w-20 absolute top-[-50px] right-5' />
             <h1 className='text-center text-xs font-bold'><i>Assalamualaikum WarahmatullahiWabarakatuh</i></h1>
@@ -31,8 +31,8 @@ const CustomLayout = () => {
             <p className='mt-5 text-xs'>Hari: Sabtu</p>
             <p className='text-xs'>Tanggal: 11 Januari 2025</p>
             <div className='flex'>
-              {/* <LottieComponent delay={5000}/> */}
-              {/* <LottieComponent delay={6000} className='right-0'/> */}
+              <LottieComponent delay={5000}/>
+              <LottieComponent delay={6000} className='right-0'/>
             </div>
             <p className='text-xs'>Waktu: 19.00 WIB</p>
             <p className='text-xs'>Tempat : Masjid Abu Bakar Ash-Shiddiq Pala Bali RW 6 Boponter Depok</p>
@@ -40,8 +40,8 @@ const CustomLayout = () => {
             <h1 className='mt-10 text-xs font-bold'><i>Wassalamualaikum Warahmatullahi Wabarakatuh</i></h1>
             <img src="./mosque.png" alt="mosque" className='w-screen absolute bottom-0 left-0 opacity-20' />
             <div className='flex'>
-              {/* <LottieComponent delay={7000}/> */}
-              {/* <LottieComponent delay={8000} className='right-0'/> */}
+              <LottieComponent delay={7000}/>
+              <LottieComponent delay={8000} className='right-0'/>
             </div>
             {/* <div className="w-screen h-screen md:w-[719px] md:h-[984px]">
               <Image alt='img-broken' layout='fill' src="/bg-1.png" objectFit='cover' />

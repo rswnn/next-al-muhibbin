@@ -1,7 +1,7 @@
 'use client'
 
 import Lottie from 'react-lottie';
-import * as animationData from '../../public/stars.json'
+import * as animationData from './stars.json'
 import { useEffect, useState } from 'react';
 
 type LottieCompnentProps = {
