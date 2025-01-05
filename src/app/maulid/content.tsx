@@ -2,11 +2,17 @@
 'use client'
 
 import Image from "next/image";
+import type { Metadata } from "next";
 import Carousel from '@/components/Carousel';
 import CustomLayout from '@/components/CustomLayout';
 import React, { useMemo } from 'react'
 
 import { SwipeableButton } from "react-swipeable-button";
+
+export const metadata: Metadata = {
+  title: "Al-muhibbin",
+  description: "Undangan Maulid Nabi Muhammad SAW dan Milad Majelis Ta'lim Al-Muhibbin",
+};
 
 
 const Content = () => {
@@ -100,7 +106,7 @@ const Content = () => {
         <div>
           <div className='animate-visibility-hidden'>
             <div className='w-screen h-screen absolute z-10 top-0 right-0 left-0 bg-gradient-to-b from-[#302c6c] to-[#9d2d86] bg-black animate__animated animate__slideOutDown animate__delay-3s'>
-              <div className='animate__animated animate__backInDown absolute left-0 right-0 top-[40%]'>
+              <div className='animate__animated animate__backInDown absolute left-0 right-0 top-[30%]'>
                 <Image alt='img-broken' src="/master-almuhibbin.png" className='mx-auto block mb-14 animate__animated animate__fadeOut animate__delay-2s' width={140} height={140} />
               </div>
             </div>
