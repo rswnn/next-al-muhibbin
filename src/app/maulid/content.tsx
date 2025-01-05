@@ -2,18 +2,11 @@
 'use client'
 
 import Image from "next/image";
-import type { Metadata } from "next";
 import Carousel from '@/components/Carousel';
 import CustomLayout from '@/components/CustomLayout';
 import React, { useMemo } from 'react'
 
 import { SwipeableButton } from "react-swipeable-button";
-
-export const metadata: Metadata = {
-  title: "Al-muhibbin",
-  description: "Undangan Maulid Nabi Muhammad SAW dan Milad Majelis Ta'lim Al-Muhibbin",
-};
-
 
 const Content = () => {
   const [isLocked, setIsLocked] = React.useState(true);
