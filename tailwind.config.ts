@@ -12,6 +12,15 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      animation: {
+        'visibility-hidden': 'wiggle 4s forwards',
+      },
+      keyframes: {
+        wiggle: {
+          '99%': { display: 'block' },
+          '100%': { display: 'none' },
+        }
+      }
     },
   },
   plugins: [],

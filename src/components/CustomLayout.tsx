@@ -11,9 +11,9 @@ const roboto = Montserrat({
 })
 
 type CustomLayoutProps = {
-  firstChildren: React.ReactNode
-  secondChildren: React.ReactNode
-  thirdChildren: React.ReactNode
+  firstChildren?: React.ReactNode
+  secondChildren?: React.ReactNode
+  thirdChildren?: React.ReactNode
 }
 
 const CustomLayout = ({firstChildren, secondChildren, thirdChildren}: CustomLayoutProps) => {
@@ -25,7 +25,7 @@ const CustomLayout = ({firstChildren, secondChildren, thirdChildren}: CustomLayo
             <LottieComponent delay={2000}/>
           </div>
           <img src="./lamp.png" alt="lamp" className='w-20 absolute top-[-40px] left-5 animate__animated animate__fadeInDown' />
-          <Image alt='img-broken' src="/master-almuhibbin.png" className='mx-auto block mb-14 animate__animated animate__fadeIn' width={110} height={110} />
+          <Image alt='img-broken' src="/master-almuhibbin.png" className='mx-auto block mb-14 animate__animated animate__fadeIn animate__delay-1s' width={110} height={110} />
           <div className='flex'>
             <LottieComponent delay={3000}/>
             <LottieComponent delay={4000} className='right-0'/>
