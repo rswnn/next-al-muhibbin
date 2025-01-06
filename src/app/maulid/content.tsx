@@ -122,12 +122,17 @@ const Content = () => {
             </div>
           </div>
           <div className='mx-10'>
-          <img src="./lamp.png" alt="lamp" className='w-16 absolute top-[-50px] left-[8px] animate__animated animate__fadeInDown animate__delay-3s' />
-          <img src="./lamp.png" alt="lamp" className='w-16 absolute top-[-20px] left-[60px] animate__animated animate__fadeInDown animate__delay-3s' />
-          <img src="./lamp.png" alt="lamp" className='w-16 absolute top-[-50px] left-28 animate__animated animate__fadeInDown animate__delay-3s' />
+            <img src="./lamp.png" alt="lamp" className='w-16 absolute top-[-50px] left-[8px] animate__animated animate__fadeInDown animate__delay-3s' />
+            <img src="./lamp.png" alt="lamp" className='w-16 absolute top-[-20px] left-[60px] animate__animated animate__fadeInDown animate__delay-3s' />
+            <img src="./lamp.png" alt="lamp" className='w-16 absolute top-[-50px] left-28 animate__animated animate__fadeInDown animate__delay-3s' />
             <img src="./terompah.png" alt="mosque" className='opacity-20 absolute top-[25%] left-0 right-0' />
-            <div className='absolute top-[30%] -right-5 rounded-lg bg-[#302c6c] px-5 py-3 w-[230px] animate__animated animate__slideInRight animate__delay-4s'>
-              <h1 className={'text-2xl tracking-wide' + ` ${playWrite.className}`} >Undangan</h1>
+            <div className='absolute top-[30%] right-0 w-[60%] overflow-hidden'>
+              <div className='rounded-l-lg bg-[#302c6c] px-5 py-3 w-[230px] animate__animated animate__slideInRight animate__delay-4s ml-7'>
+                <h1 className={'text-2xl tracking-wide' + ` ${playWrite.className}`} >Undangan</h1>
+              </div>
+              <div>
+                <h1 className='text-center text-xs font-bold mt-3 ml-5 animate__animated animate__fadeIn animate__delay-4s'>Peringatan Maulid dan dan Milad Majelis Talim Al-Muhibbin</h1>
+              </div>
             </div>
             <div className='border-4 absolute top-[30px] right-[20px] rounded-full animate__animated animate__fadeIn animate__delay-4s'>
               <img src="./caligraph.png" alt="mosque" className='w-[160px]' />
