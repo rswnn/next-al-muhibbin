@@ -2,13 +2,7 @@
 
 /* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
-import { Montserrat } from 'next/font/google'
 import LottieComponent from './Lottie';
-
-const roboto = Montserrat({
-  weight: '400',
-  subsets: ['latin'],
-})
 
 type CustomLayoutProps = {
   firstChildren?: React.ReactNode
@@ -18,7 +12,7 @@ type CustomLayoutProps = {
 
 const CustomLayout = ({firstChildren, secondChildren, thirdChildren}: CustomLayoutProps) => {
   return (
-    <main className={roboto.className +" items-center sm:items-start"}>
+    <main className={" items-center sm:items-start"}>
         <div className="container mx-auto relative bg-gradient-to-b from-[#302c6c] to-[#9d2d86] h-screen px-5 pb-16 pt-16 overflow-hidden">
           <div className='flex'>
             <LottieComponent delay={1000} className='right-0'/>

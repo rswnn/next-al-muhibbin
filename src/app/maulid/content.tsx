@@ -4,12 +4,29 @@
 import Image from "next/image";
 import Carousel from '@/components/Carousel';
 import CustomLayout from '@/components/CustomLayout';
-import React, { useMemo } from 'react'
+import React, { useEffect, useMemo, useRef } from 'react'
+import { Playwrite_AU_SA } from 'next/font/google';
 
-import { SwipeableButton } from "react-swipeable-button";
+const playWrite = Playwrite_AU_SA({
+  weight: '400',
+})
 
 const Content = () => {
+  const audioRef = useRef<HTMLAudioElement>(null);
   const [isLocked, setIsLocked] = React.useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      if (window && audioRef.current) {
+        audioRef?.current?.pause();
+        audioRef.current.muted = false;
+        
+        setTimeout(() => {
+          // audioRef?.current?.play();
+        }, 500);
+      }
+    }, 3000);
+  },[])
 
   const renderMainContent = useMemo(() => {
     return (
@@ -104,15 +121,51 @@ const Content = () => {
               </div>
             </div>
           </div>
-          <div className='px-6 absolute bottom-6 left-0 right-0 animate__animated animate__fadeIn animate__delay-4s'>
-            <SwipeableButton
-              autoWidth
-              text="Swipe untuk buka undangan" //string 
-              background_color="transparent"
-              sliderColor='#302c6c'
-              onSuccess={() => setIsLocked(false)}
-            />
+          <div className='mx-10'>
+          <img src="./lamp.png" alt="lamp" className='w-16 absolute top-[-50px] left-[8px] animate__animated animate__fadeInDown animate__delay-3s' />
+          <img src="./lamp.png" alt="lamp" className='w-16 absolute top-[-20px] left-[60px] animate__animated animate__fadeInDown animate__delay-3s' />
+          <img src="./lamp.png" alt="lamp" className='w-16 absolute top-[-50px] left-28 animate__animated animate__fadeInDown animate__delay-3s' />
+            <img src="./terompah.png" alt="mosque" className='opacity-20 absolute top-[25%] left-0 right-0' />
+            <div className='absolute top-[30%] -right-5 rounded-lg bg-[#302c6c] px-5 py-3 w-[230px] animate__animated animate__slideInRight animate__delay-4s'>
+              <h1 className={'text-2xl tracking-wide' + ` ${playWrite.className}`} >Undangan</h1>
+            </div>
+            <div className='border-4 absolute top-[30px] right-[20px] rounded-full animate__animated animate__fadeIn animate__delay-4s'>
+              <img src="./caligraph.png" alt="mosque" className='w-[160px]' />
+            </div>
+          <div>
           </div>
+          </div>
+          <div className='px-10 absolute bottom-6 left-0 right-0 animate__animated animate__fadeIn animate__delay-4s'>
+            <div className='flex items-center'>
+              <img src="./calendar.svg" alt="" className='w-6 h-6 mr-2' />
+              <div>
+                <p className='font-bold'>11 Rajab 1446 H</p>
+                <p className='text-xs'>11 Januari 2025 M</p>
+              </div>
+            </div>
+            <div className='mt-5'>
+              <a className='flex items-center' href="https://g.co/kgs/XF1BnKg">
+                <img src="./map-marker.svg" alt="" className='w-6 h-6 mr-2' />
+                <div>
+                  <p className='font-bold'>Masjid Abu Bakar Ash-Shiddiq</p>
+                  <p className='text-xs'>Pala Bali RW 6 Bojong pondok terong Depok</p>
+                </div>
+              </a>
+            </div>
+            <div className='animate__animated animate__fadeIn animate__delay-4s mt-10'>
+              <h1 className='text-sm font-bold'>Kepada YTH</h1>
+              <div className='flex flex-col items-center justify-center mt-5'>
+                <div className='roundcalied w-full h-28 p-4 bg-transparent border-2 border-[rgba(255, 255, 255, 0.1)] rounded-xl' id=""/>
+                <button className='bg-[#302c6c] text-white py-2 rounded w-[80%] h-14 mt-10' onClick={() => {
+                  setIsLocked(false)
+                  audioRef.current?.play()
+                }}>
+                  <p className='font-bold text-lg shimmer tracking-wide'>Buka undangan</p>
+                </button>
+              </div>
+            </div>
+          </div>
+          <img src="./mosque.png" alt="mosque" className='w-screen absolute bottom-0 left-0 opacity-20 -z-10' />
         </div>
       )
     }
@@ -120,7 +173,16 @@ const Content = () => {
     return renderMainContent
   },[isLocked, renderMainContent])
 
-  return renderContent
+  return (
+    <div>
+      {renderContent}
+      <audio ref={audioRef} id='audio' muted autoPlay loop>
+        <source src="./sound.ogg" type="audio/ogg"/>
+        <source src="./sound.mp3" type="audio/mp3"/>
+      </audio>
+      <button className='btn-play' onClick={() => audioRef.current?.play()}></button>
+    </div>
+  )
 }
 
 export default Content
