@@ -7,10 +7,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Al-muhibbin",
-  description: "Undangan Maulid Nabi Muhammad SAW dan Milad Majelis Ta'lim Al-Muhibbin",
-  icons: {
-    icon: './master-almuhibbin.png',
-  }
+  description: "Undangan Maulid Nabi Muhammad SAW dan Milad Majelis Ta'lim Al-Muhibbin"
 
 };
 
