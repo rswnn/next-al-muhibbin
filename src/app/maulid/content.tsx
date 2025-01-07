@@ -35,7 +35,7 @@ const Content = () => {
           <CustomLayout 
             firstChildren={
               <div>
-                <h1 className='text-center text-xs font-bold animate__animated animate__fadeIn animate__delay-2s'><i>Assalamualaikum WarahmatullahiWabarakatuh</i></h1>
+                <h1 className='text-center text-xs font-bold animate__animated animate__fadeIn animate__delay-2s'><i>Assalamu&apos;alaikum WarahmatullahiWabarakatuh</i></h1>
                 <p className='mt-5 text-xs animate__animated animate__fadeIn animate__delay-3s leading-6'>Dengan Hormat,</p>
                 <p className='text-xs mt-1 text-justify animate__animated animate__fadeIn animate__delay-3s leading-5'>&nbsp;&nbsp;Puji sykur Kehadirat Allah SWT, mudah-mudahan Bpk/Ibu/Sdr/i kaum muslimin walmuslimat dalam keadaan sehat dan dapat menjalankan aktivi-tas sehari-hari dengan baik. Sehubungan akan dilaksanakan peringatan Maulid Nabi Muhammad SAW 1446 H, kami dari panitia mengundang Bpk/bu/Sdr/i agar berkenan menghadiri acara tersebut yang Insya Allah akan dilaksanakan pada :</p>
               </div>
@@ -56,20 +56,20 @@ const Content = () => {
                   <tr>
                     <td><p className='text-xs'>Waktu</p></td>
                     <td><p className='text-xs'>:</p></td>
-                    <td><p className='text-xs'>19.00 WIB</p></td>
+                    <td><p className='text-xs'>Ba&apos;da Sholat Isya</p></td>
                   </tr>
                   <tr>
                     <td><p className='text-xs'>Tempat</p></td>
                     <td><p className='text-xs'>:</p></td>
-                    <td><p className='text-xs'>Masjid Abu Bakar Ash-Shiddiq Pala Bali RW 6 Boponter Depok</p></td>
+                    <td><p className='text-xs'>Masjid Abu Bakar Ash-Shiddiq Pala Bali RW 6 Bojong pondok terong</p></td>
                   </tr>
                 </tbody>
               </table>
             }
             thirdChildren={
               <div>
-                <p className='mt-5 text-xs text-justify animate__animated animate__fadeIn animate__delay-5s leading-5'>Atas perhatiannya dan kehadirannya kami ucapkan Allhamdulilah Khoiron Katsiron dengan iringan doa semoga Bpk/bu/Sdr/i kaum muslimin walmuslimat selalu ada dalam lindungan Allah SWT dan Mendapat Syafaat keberkahan Rosululloh SAW Aamiin.</p>
-                <h1 className='mt-10 text-xs font-bold animate__animated animate__fadeIn animate__delay-5s'><i>Wassalamualaikum Warahmatullahi Wabarakatuh</i></h1>
+                <p className='mt-5 text-xs text-justify animate__animated animate__fadeIn animate__delay-5s leading-5'>Atas perhatiannya dan kehadirannya kami ucapkan Allhamdulilah Khoiron Katsiron dengan iringan do&apos;a semoga Bpk/bu/Sdr/i kaum muslimin walmuslimat selalu ada dalam lindungan Allah SWT dan Mendapat Syafaat keberkahan Rosululloh SAW Aamiin.</p>
+                <h1 className='mt-10 text-xs font-bold animate__animated animate__fadeIn animate__delay-5s'><i>Wassalamu&apos;alaikum Warahmatullahi Wabarakatuh</i></h1>
               </div>
             }
           />
@@ -77,31 +77,32 @@ const Content = () => {
         secondChildren={
           <CustomLayout 
             firstChildren={
-              <div className='mt-3'>
-                <div className='flex justify-between mx-3'>
-                  <img src="./hb-3.png" alt="hb-1" className='w-[136px]' />
-                  <img src="./hb-2.png" alt="hb-2" className='w-[136px]' />
-                </div>
-                <div className='items-center justify-items-center'>
-                  <img src="./hb-1.png" alt="hb-2" className='w-[136px]' />
-                </div>
+              <div className='items-center justify-items-center z-20 relative -mt-5'>
+                <img src="./all-habib.png" alt="hb-2" className='w-[340px]' />
+              </div>
+            }
+            secondChildren={
+              <div className='mt-5'>
+                <p className='font-bold text-sm text-center'>ALHABIB GHASIM BIN JA&apos;FAR ASSEGAF</p>
+                <p className='font-bold text-sm text-center'>(MAJELIS NURUL MUSTHOFA)</p>
+                <p className='font-bold text-sm text-center mt-2'>ALHABIB ABDULLAH BIN YAHYA</p>
+                <p className='font-bold text-sm text-center'>(MAJELIS RASULALLAH)</p>
+                <p className='font-bold text-sm text-center mt-2'>ALHABIB HAMID BIN HELMI ALKHIRID</p>
+                <p className='font-bold text-sm text-center'>(MAJELIS SA&apos;ADDATUD DA AROIN)</p>
+
+                <p className='text-sm text-center mt-4'>KH. M. HARRIRUDIN, UST. M. ABBAS, UST. ALI BUSUNI ASATIDZ DAN TOKOH MASYARAKAT SETEMPAT</p>
+                <h1 className='font-bold text-lg text-center mt-4 text-[#fcdd69]'>HADIRI DAN MERIAHKANLAH</h1>
+                <a className='flex items-center justify-center z-30' href="https://www.youtube.com/@hdrtvmedia">
+                  <div className='bg-white rounded-lg w-8 h-7 mr-3'>
+                    <img src="./yt.svg" alt="" className='w-7 h-7 mx-auto my-0' />
+                  </div>
+                  <h1 className='font-bold text-center mt-1 text-[#fcdd69]'>LIVE ON YOUTUBE @HDRTV</h1>
+                </a>
               </div>
             }
             thirdChildren={
-              <div>
-                <h1 className='text-center mt-10 text-lg font-bold animate__animated animate__fadeIn animate__delay-5s'>Hormat Kami</h1>
-                <div className='flex justify-between mt-10'>
-                  <div className='items-center justify-items-center'>
-                    <p className='text-sm font-bold leading-7'>DKM Masjid Abu Bakar</p>
-                    <p className='text-sm font-bold'>Ash-Shidiq</p>
-                    <p className='mt-7 text-sm font-bold'>Ust. M.Abbas</p>
-                  </div>
-                  <div className='items-center justify-items-center'>
-                    <p className='text-sm font-bold leading-7'>Pembina Majelis Talim</p>
-                    <p className='text-sm font-bold'>AL - MUHIBBIN</p>
-                    <p className='mt-7 text-sm font-bold'>Ust. Maman</p>
-                  </div>
-                </div>
+              <div className='fixed bottom-0 bg-[#302c6c] left-0 p-1 right-0'>
+                <p className='text-sm font-bold leading-7 text-center'>JANGAN DATANG KARNA SESUATU, JANGAN PULANG TANPA ILMU, JANGAN LUPA ISTIQOMAH</p>
               </div>
             }
           />
@@ -125,7 +126,7 @@ const Content = () => {
             <img src="./lamp.png" alt="lamp" className='w-16 absolute top-[-50px] left-[8px] animate__animated animate__fadeInDown animate__delay-3s' />
             <img src="./lamp.png" alt="lamp" className='w-16 absolute top-[-20px] left-[60px] animate__animated animate__fadeInDown animate__delay-3s' />
             <img src="./lamp.png" alt="lamp" className='w-16 absolute top-[-50px] left-28 animate__animated animate__fadeInDown animate__delay-3s' />
-            <img src="./terompah.png" alt="mosque" className='opacity-20 absolute top-[25%] left-0 right-0' />
+            <img src="./terompah.png" alt="mosque" className='opacity-20 absolute top-[25%] left-0 right-0 -z-10' />
             <div className='absolute top-[30%] right-0 w-[60%] overflow-hidden'>
               <div className='rounded-l-lg bg-[#302c6c] px-5 py-3 w-[230px] animate__animated animate__slideInRight animate__delay-4s ml-7'>
                 <h1 className={'text-2xl tracking-wide' + ` ${playWrite.className}`} >Undangan</h1>
@@ -185,7 +186,6 @@ const Content = () => {
         <source src="./sound.ogg" type="audio/ogg"/>
         <source src="./sound.mp3" type="audio/mp3"/>
       </audio>
-      <button className='btn-play' onClick={() => audioRef.current?.play()}></button>
     </div>
   )
 }
